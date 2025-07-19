@@ -1,19 +1,19 @@
 {
-  "name": "backend",
+  "name": "full-fledge-backend",
   "version": "1.0.0",
-  "description": "a basic app to deploy",
-  "main": "index.js",
+  "description": "a professional backend development on a much more online video server api level complexity.",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node",
-    "rk"
-  ],
-  "author": "Astik Goswami",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitx64/backendTutorial.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^17.2.0",
-    "express": "^5.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/gitx64/backendTutorial/issues"
+  },
+  "homepage": "https://github.com/gitx64/backendTutorial#readme"
 }
