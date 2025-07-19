@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "a professional backend development on a much more online video server api level complexity.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gitx64/backendTutorial.git"
   },
-  "author": "",
+  "author": "Astik Goswami",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gitx64/backendTutorial/issues"
   },
-  "homepage": "https://github.com/gitx64/backendTutorial#readme"
+  "homepage": "https://github.com/gitx64/backendTutorial#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
