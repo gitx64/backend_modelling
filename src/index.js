@@ -1,6 +1,10 @@
 import dotenv from 'dotenv'
 dotenv.config()
 import connectDB from "./db/index.js";
+import express from "express";
+
+
+const app = express();
 // ;(async () => {
 //   try {
 //     await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
@@ -14,6 +18,14 @@ import connectDB from "./db/index.js";
 //   } catch (error) {
 //     console.log(error)
 //   }
-// })();
+// })(); iffi structure
 
-connectDB();
+connectDB()
+.then(() => {
+    app.on('error', (err) => {
+        console.log("Error: Connected server but now : ",err)
+        throw err;
+    })
+    app.listen(process.env.PORT, () => console.log(`Server is running at port ${process.env.PORT}`))
+})
+.catch((err) => console.log("Mongodb Connection Failed !!", err))

@@ -2,7 +2,7 @@
   "name": "full-fledge-backend",
   "version": "1.0.0",
   "description": "a professional backend development on a much more online video server api level complexity.",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon -r dotenv/config src/index.js"
@@ -22,8 +22,9 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mongoose": "^8.16.4"
   }
