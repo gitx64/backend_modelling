@@ -5,6 +5,6 @@ const userController = asyncHandler((req,res,next) => {
         message:"User controller is working"
     })
 
-})
+}) 
 
 export default userController;
